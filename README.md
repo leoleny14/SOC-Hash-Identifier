@@ -43,3 +43,13 @@ This Python tool automates the triage process by analyzing the structural charac
 1. Clone the repository:
    ```bash
    git clone [https://github.com/leoleny14/SOC-Hash-Identifier.git](https://github.com/leoleny14/SOC-Hash-Identifier.git)
+
+   ---
+
+### 💡 Analyst Tip on Case Sensitivity
+On **Linux** and **macOS** environments (which almost all SOC analysts and security sandboxes use), file names are **case-sensitive**. 
+
+* If your file on GitHub is saved as `hash_detector.py` (all lowercase), typing `python3 hash_detector.py` will work perfectly.
+* If it were saved as `Hash_Detector.py` (capitalized), Linux would throw a `No such file or directory` error if someone typed it in lowercase.
+
+Matching `hash_detector.py` exactly in your `README.md` ensures your documentation works smoothly for anyone who clones your repo!
